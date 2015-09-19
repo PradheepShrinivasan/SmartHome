@@ -1,0 +1,515 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+                              remotenode2.o (__udivmodhi4)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_divmodhi4.o)
+                              remotenode2.o (__divmodhi4)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodsi4.o)
+                              remotenode2.o (__udivmodsi4)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+                              remotenode2.o (__do_copy_data)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+                              remotenode2.o (__do_clear_bss)
+c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                              remotenode2.o (strcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+fh                  0x1               remotenode2.o
+uartReadyTx         0x1               remotenode2.o
+packet              0x75              remotenode2.o
+uartRxBuffer        0x8               remotenode2.o
+rfSettings          0x9               remotenode2.o
+fm                  0x1               remotenode2.o
+rfRxInfo            0xa               remotenode2.o
+spiTransferComplete
+                    0x1               remotenode2.o
+uartBufferedTx      0x1               remotenode2.o
+nm                  0x1               remotenode2.o
+pRxBuffer           0x80              remotenode2.o
+nap11               0x1               remotenode2.o
+fap11               0x1               remotenode2.o
+a2dCompleteFlag     0x1               remotenode2.o
+nh                  0x1               remotenode2.o
+rfTxInfo            0x8               remotenode2.o
+uartTxBuffer        0x8               remotenode2.o
+uartRxOverflow      0x2               remotenode2.o
+pTxBuffer           0x80              remotenode2.o
+
+Discarded input sections
+
+ .stabstr       0x00000000        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+LOAD remotenode2.o
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x21d0
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000054      0x118 remotenode2.o
+                0x0000016c                . = ALIGN (0x2)
+                0x0000016c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000016c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000016c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000016c                __ctors_start = .
+ *(.ctors)
+                0x0000016c                __ctors_end = .
+                0x0000016c                __dtors_start = .
+ *(.dtors)
+                0x0000016c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000016c        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+                0x0000016c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000016c        0xc c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000178       0x16 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+                0x00000178                __do_copy_data
+ .init4         0x0000018e       0x10 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+                0x0000018e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000019e        0x8 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x000001a6        0x4 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+                0x000001a6                __vector_1
+                0x000001a6                __vector_12
+                0x000001a6                __bad_interrupt
+                0x000001a6                __vector_6
+                0x000001a6                __vector_3
+                0x000001a6                __vector_11
+                0x000001a6                __vector_17
+                0x000001a6                __vector_7
+                0x000001a6                __vector_5
+                0x000001a6                __vector_4
+                0x000001a6                __vector_9
+                0x000001a6                __vector_8
+                0x000001a6                __vector_14
+                0x000001a6                __vector_10
+                0x000001a6                __vector_18
+                0x000001a6                __vector_20
+ .text          0x000001aa     0x1f84 remotenode2.o
+                0x00000dca                cc2420WriteReg
+                0x00000908                i2cInit
+                0x00000802                spiTransferWord
+                0x00000caa                i2cMasterTransferNI
+                0x00000964                i2cSendStart
+                0x0000210e                uartSendTxBuffer
+                0x00000884                a2dIsComplete
+                0x00000ad6                readtemp
+                0x000011f8                rprintf1RamRom
+                0x00000978                i2cWaitForComplete
+                0x000007e0                spiSendByte
+                0x00000274                uartSendByte
+                0x0000079c                bufferIsNotFull
+                0x00000ed8                cc2420DumpFifo
+                0x000008b6                a2dConvert8bit
+                0x00000538                bufferGetFromFront
+                0x00000372                rprintfu08
+                0x00000a92                ds1624_check
+                0x000009a2                i2cGetReceivedByte
+                0x000001aa                uartInitBuffers
+                0x000003a2                rprintfu32
+                0x000002be                rprintfStr
+                0x00001c6e                i2cMasterSend
+                0x0000119c                basicRfReceiveOn
+                0x00000a5a                ds1624_startconvert
+                0x000006a6                bufferGetAtIndex
+                0x000005f2                uartReceiveByte
+                0x000002dc                rprintfStrLen
+                0x00000832                a2dOff
+                0x00000bec                ds1307_check
+                0x00001c26                i2cMasterReceive
+                0x0000032e                rprintfProgStr
+                0x00000838                a2dSetPrescaler
+                0x0000134e                applay
+                0x00000666                bufferDumpFromFront
+                0x00000388                rprintfu16
+                0x0000078e                uartAddToTxBuffer
+                0x00000bde                initI2c
+                0x00000e86                cc2420Command
+                0x00000e66                cc2420SetChannel
+                0x000002a8                rprintfInit
+                0x000009ae                i2cMasterSendNI
+                0x000001f8                uartSetRxHandler
+                0x00000710                __vector_13
+                0x00001cae                __vector_19
+                0x00000950                i2cSetSlaveReceiveHandler
+                0x00000a18                i2cGetState
+                0x0000088e                a2dConvert10bit
+                0x00000854                a2dInit
+                0x00000286                uartFlushReceiveBuffer
+                0x000002b2                rprintfChar
+                0x000011b6                basicRfReceiveOff
+                0x00000d7e                DS1307_get
+                0x00000236                uartInit
+                0x00000e90                cc2420GetStatus
+                0x00000290                uartReceiveBufferIsEmpty
+                0x00000a20                ds1624_config
+                0x00000842                a2dSetReference
+                0x00001a70                cc2420Init
+                0x00000dec                cc2420WriteRam
+                0x0000034e                rprintfCRLF
+                0x00000202                uartSetBaudRate
+                0x00000b98                ds1624_readtemp
+                0x00001f68                main
+                0x000007c0                spiInit
+                0x00001bc6                initAll
+                0x000009a8                i2cGetStatus
+                0x000007ec                spiTransferByte
+                0x0000026e                uartGetTxBuffer
+                0x00000980                i2cSendByte
+                0x00001818                nwkpacketsend
+                0x0000062a                uartGetByte
+                0x0000095a                i2cSetSlaveTransmitHandler
+                0x00000268                uartGetRxBuffer
+                0x0000101a                __vector_2
+                0x00000ea0                cc2420ReadFifo
+                0x00000c6c                DS1307_setdate
+                0x00000584                __vector_15
+                0x00000942                i2cSetLocalDeviceAddr
+                0x000011c8                portInit
+                0x00000efc                cc2420SendPck
+                0x00000c30                DS1307_settime
+                0x00001eea                i2cMasterReceiveNI
+                0x0000035c                rprintfu04
+                0x00000e34                cc2420WriteFifo
+                0x000018d8                nwkpacketrec
+                0x00000524                bufferInit
+                0x000006ca                bufferAddToEnd
+                0x000007b8                bufferFlush
+                0x000008c6                __vector_16
+                0x0000098c                i2cReceiveByte
+                0x000008e4                i2cSetBitrate
+                0x000020f0                initUart
+                0x00000872                a2dSetChannel
+                0x000003c6                rprintfNum
+                0x0000087e                a2dStartConvert
+                0x0000096e                i2cSendStop
+ .text          0x0000212e        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000212e        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x0000212e        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000212e        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .text          0x0000212e        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000212e        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000212e        0xe c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x0000212e                strcpy
+                0x0000213c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000213c       0x28 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000213c                __udivmodhi4
+ .text.libgcc   0x00002164       0x26 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_divmodhi4.o)
+                0x00002164                __divmodhi4
+                0x00002164                _div
+ .text.libgcc   0x0000218a       0x44 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodsi4.o)
+                0x0000218a                __udivmodsi4
+ .text.libgcc   0x000021ce        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000021ce        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000021ce        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+                0x000021ce                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000021ce        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+                0x000021ce                exit
+                0x000021ce                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000021ce        0x2 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000021d0                _etext = .
+
+.data           0x00800060       0x12 load address 0x000021d0
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060       0x12 remotenode2.o
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcpy.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800072                . = ALIGN (0x2)
+                0x00800072                _edata = .
+                0x00800072                PROVIDE (__data_end, .)
+
+.bss            0x00800072      0x27b
+                0x00800072                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800072        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800072       0xcf remotenode2.o
+                0x00800072                flag
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800141        0x0 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5\libc.a(strcpy.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800141      0x1ac remotenode2.o
+                0x00800141                fh
+                0x00800142                uartReadyTx
+                0x00800143                packet
+                0x008001b8                uartRxBuffer
+                0x008001c0                rfSettings
+                0x008001c9                fm
+                0x008001ca                rfRxInfo
+                0x008001d4                spiTransferComplete
+                0x008001d5                uartBufferedTx
+                0x008001d6                nm
+                0x008001d7                pRxBuffer
+                0x00800257                nap11
+                0x00800258                fap11
+                0x00800259                a2dCompleteFlag
+                0x0080025a                nh
+                0x0080025b                rfTxInfo
+                0x00800263                uartTxBuffer
+                0x0080026b                uartRxOverflow
+                0x0080026d                pTxBuffer
+                0x008002ed                PROVIDE (__bss_end, .)
+                0x000021d0                __data_load_start = LOADADDR (.data)
+                0x000021e2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008002ed        0x0
+                0x008002ed                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008002ed                PROVIDE (__noinit_end, .)
+                0x008002ed                _end = .
+                0x008002ed                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab           0x00000000      0x378
+ *(.stab)
+ .stab          0x00000000      0x378 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+
+.stabstr        0x00000000       0x71
+ *(.stabstr)
+ .stabstr       0x00000000       0x71 c:/winavr-20070525/bin/../lib/gcc/avr/4.1.2/../../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 remotenode2.o
+
+.debug_pubnames
+                0x00000000      0x80a
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x80a remotenode2.o
+
+.debug_info     0x00000000     0x26b8
+ *(.debug_info)
+ .debug_info    0x00000000     0x26b8 remotenode2.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x399
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x399 remotenode2.o
+
+.debug_line     0x00000000     0x1d99
+ *(.debug_line)
+ .debug_line    0x00000000     0x1d99 remotenode2.o
+
+.debug_frame    0x00000000      0x620
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x620 remotenode2.o
+
+.debug_str      0x00000000      0xb44
+ *(.debug_str)
+ .debug_str     0x00000000      0xb44 remotenode2.o
+                                0xbe3 (size before relaxing)
+
+.debug_loc      0x00000000     0x129d
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x129d remotenode2.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(remotenode2.elf elf32-avr)
+LOAD linker stubs
