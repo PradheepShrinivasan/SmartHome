@@ -2,8 +2,6 @@
 This repository contains a smart home implementation using 802.15.4
 ![board](https://lh3.googleusercontent.com/-WD9xhxDIJRA/VcG7q0gcjiI/AAAAAAAAPXw/Qb3Ayk3SpT4/s800-Ic42/DSC00058.JPG)
 
-##Overview
-
 ##Hardware 
 
 There were 2 hardware boards that was developed for this project. One was an general purpose AVR development board (shown below) and the other was a board that would connect to the Zigbee device using SPI bus.
@@ -34,7 +32,7 @@ PIR sensor was used to detect the presence of person and based on occupancy, the
 
 #### Light sensor
 The light sensor used in this project is a simple LDR that is connected to micro controller via the ADC.
-[light] (pictures/lightsensor.png)
+![light] (pictures/lightsensor.png)
 
 ####Appliance control 
 In order to control various appliances that might be connected to the zigbee board a seperate board was designed with atmega 13 so that we can control the appliances via relays.
