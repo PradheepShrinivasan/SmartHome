@@ -80,9 +80,10 @@ So we enhanced the project further to add more sensor and also write a simple tr
 
 ##Developers
 The entire system was developed as part of our final year engineer project (2007-2008) by the following people in the alphabetical order
-  1.Alagappan 
-  2.Balaji srinivasan
-  3.Jerome
-  4.Pradheep Shrinivasan(me)
-  5.Vasantha kumar
-  6.Vivek swaminathan
+
+  1. Alagappan 
+  2. Balaji srinivasan
+  3. Jerome
+  4. Pradheep Shrinivasan(me)
+  5. Vasantha kumar
+  6. Vivek swaminathan
